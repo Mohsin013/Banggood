@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Womens Page</title>
+    <link rel="shortcut icon" href="https://www.banggood.in/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5194c7794a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="https://www.banggood.in/favicon.ico" type="image/x-icon" />
+    <title>Banggood</title>
+    <!-- <link rel="stylesheet" href="home.css" /> -->
+    <style>
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 75px;
+            background-color: #2d2d38;
+            color: white;
+            padding: 0 4.5%;
+        }
+        
+        #logo {
+            flex: 1;
+            cursor: pointer;
+        }
+        
+        #logo>img {
+            width: 75%;
+        }
+        
+        .search {
+            flex: 3;
+            display: flex;
+        }
+        
+        .search>input {
+            width: 90%;
+            padding: 9px;
+            border: none;
+            outline: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        
+        .search>div {
+            background-color: #ff6e26;
+            width: 8%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .search>div:hover {
+            background-color: #cf6e26;
+        }
+        
+        #nav> :nth-child(3) {
+            display: flex;
+            flex: 2;
+            justify-content: space-around;
+        }
+        
+        .ship>span {
+            color: grey;
+            font-size: 0.9rem;
+        }
+        
+        .ship>p {
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+        
+        .ship>p>span {
+            display: inline-block;
+            padding: 0 0 0 0.3rem;
+            color: grey;
+        }
+        
+        .user {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .user>span {
+            margin: 0.4rem;
+        }
+        
+        .user>div {
+            margin-bottom: 0.2rem;
+        }
+        
+        .user>div>span {
+            font-size: 0.8rem;
+            color: grey;
+        }
+        
+        .user>div>p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        .cart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .cart:hover {
+            color: #ff6e26;
+        }
+    </style>
+
+    <style>
+        #container {
+            /* border: 1px solid black; */
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            /* grid-template-rows: repeat(5,300px); */
+            margin: auto;
+            gap: 20px;
+            width: 92%;
+        }
+        
+        #parent {
+            /* border: 1px solid red; */
+            height: 310px;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .img_box {
+            /* border: 1px solid blue; */
+            width: 100%;
+            height: 50%;
+            background-color: whitesmoke;
+        }
+        
+        .img_box:hover {
+            cursor: pointer;
+            opacity: 0.9;
+            background-color: lightgrey;
+        }
+        
+        img {
+            width: 75%;
+            height: 100%;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .content {
+            /* border: 1px solid teal; */
+            margin-left: 1px;
+        }
+        
+        .dis_offer {
+            /* border: 1px solid cyan; */
+            width: 100%;
+            height: 40px;
+            /* line-height: 2px; */
+            margin-top: -40px;
+            font-size: 14px;
+            display: flex;
+            color: grey;
+        }
+        
+        .price {
+            margin: 25px 0px;
+            /* border:1px solid red; */
+            color: orangered;
+        }
+        
+        .title:hover {
+            color: orangered;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        
+        .title {
+            /* border: 1px solid teal; */
+            height: 48px;
+            overflow: hidden;
+            font-size: 13px;
+            margin-top: 3px;
+            color: grey;
+            font-weight: lighter;
+        }
+        
+        .deals {
+            font-size: 12px;
+            margin-top: -15px;
+            color: orangered;
+            border: 1px solid orangered;
+            width: 40%;
+            font-weight: lighter;
+            text-align: center;
+        }
+        
+        .review:hover {
+            cursor: pointer;
+            color: orangered;
+            text-decoration: underline;
+        }
+        
+        .review {
+            margin-top: -10px;
+            color: grey;
+            font-weight: lighter;
+        }
+        
+        .discount {
+            text-decoration: line-through;
+            font-weight: lighter;
+        }
+        
+        .offer {
+            font-weight: lighter;
+        }
+        
+        @media only screen and (min-width:0px) and (max-width: 320px) {
+            #container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media only screen and (min-width:321px) and (max-width:720px) {
+            #container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        
+        #container2 {
+            width: 70%;
+            height: 160px;
+            /* border: 1px solid black; */
+            margin-left: 50px;
+        }
+        
+        #container2>.bars {
+            margin-right: 5px;
+            /* border: 1px solid red; */
+            display: flex;
+        }
+        
+        .bars>div:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        
+        .bars>div {
+            margin-right: 5px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            color: grey;
+        }
+        
+        .price_bar {
+            /* border: 1px solid teal; */
+            display: flex;
+            margin-top: 5px;
+        }
+        
+        .price_bar>div {
+            margin-right: 10px;
+        }
+        
+        .min {
+            height: 35px;
+            width: 55px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        
+        .max {
+            height: 35px;
+            width: 55px;
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+        
+        .ship_from:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        
+        .ship_from {
+            padding: 10px;
+            margin: 10px;
+            margin-top: 0px;
+            text-align: left;
+            border: 1px solid grey;
+            border-radius: 5px;
+            width: 130px;
+            color: black;
+        }
+        
+        .price_name {
+            /* border: 1px solid teal; */
+            height: 20px;
+            width: 40px;
+            padding-top: 10px;
+            color: grey;
+        }
+        
+        .vertical_bars {
+            /* border: 1px solid red; */
+            width: 100px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            height: 37px;
+            display: flex;
+        }
+        
+        .vertical_bars:hover {
+            cursor: pointer;
+        }
+        
+        .vertical_bars>div {
+            width: 20px;
+            height: 35px;
+            /* border:1px solid grey; */
+        }
+        
+        .sort {
+            /* border: 1px solid red; */
+            display: flex;
+            margin-top: 10px;
+            height: 40px;
+        }
+        
+        .sort_box {
+            border: 1px solid grey;
+            /* width: 25%; */
+            display: flex;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+        
+        .sort_box>div {
+            margin-top: 10px;
+            margin-left: 10px;
+            /* border: 1px solid grey; */
+            height: 20px;
+        }
+        
+        .sort_box>div:hover {
+            color: orangered;
+            cursor: pointer;
+        }
+        
+        #price_tag {
+            padding: 3px;
+            border: none;
+            margin-left: -5px;
+        }
+        
+        #price_tag:hover {
+            color: orangered;
+        }
+        
+        .sort_heading {
+            color: grey;
+            margin-top: 10px;
+        }
+        
+        .checkbox {
+            transform: scale(1.5);
+            border: 1px solid grey;
+            margin-left: 20px;
+            margin-right: 10px;
+            margin-top: 12px;
+        }
+        
+        .checkbox_content {
+            color: grey;
+        }
+        
+        #mainboxer {
+            display: flex;
+        }
+        
+        #lefterbox>div>p:hover {
+            color: orangered;
+            cursor: pointer;
+        }
+        
+        #checkbox:hover {
+            color: orangered;
+            cursor: pointer;
+        }
+        
+        #lefterbox {
+            color: grey;
+            width: 40%;
+            /* border: 1px solid red; */
+            margin-left: 30px;
+        }
+        
+        h4 {
+            font-size: small;
+        }
+        
+        p {
+            font-size: smaller;
+        }
+        
+        #dhan {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bolder;
+        }
+        
+        #see {
+            color: teal;
+            font-size: 60%;
+        }
+        
+        #zen {
+            width: 100%;
+        }
+    </style>
+    <style>
+        #footer {
+            background-color: #f0f0f0;
+            padding: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #footer>div {
+            width: 23%;
+        }
+        
+        #footer h4,
+        #footer p {
+            margin: 5% 0;
+        }
+        
+        #footer p {
+            font-size: 0.9rem;
+            color: grey;
+        }
+        
+        #footer h4 {
+            color: #283747;
+            font-weight: 400;
+        }
+        
+        .f-1>div:nth-child(2) {
+            margin-top: 3rem;
+        }
+        
+        .f-1 input {
+            width: 92%;
+            padding: 6px 0;
+            border: none;
+            background-color: #f0f0f0;
+            border-bottom: 2px solid black;
+            outline: none;
+        }
+        
+        .f-1 input:focus {
+            border-bottom: 2px solid #ff6e26;
+        }
+        
+        .f-2>div:nth-child(2) {
+            margin-top: 1.5rem;
+        }
+        
+        .f-3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .f-3>div:nth-child(1)>div {
+            display: flex;
+            align-items: center;
+        }
+        
+        .f-3>div:nth-child(1)>div>span:nth-child(1) {
+            border: 2px solid black;
+            border-radius: 50%;
+            padding: 2% 4%;
+            margin: 0 3% 0 0;
+        }
+        
+        .f-3>div:nth-child(1)>div>span:nth-child(2) {
+            border: 2px solid black;
+            border-radius: 50%;
+            padding: 2% 3%;
+            margin: 0 3% 0 3%;
+        }
+        
+        .f-3>div:nth-child(1)>div>p {
+            border: 2px solid black;
+            padding: 6px 16px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        
+        .f-3>div:nth-child(3)>span {
+            font-size: 0.9rem;
+            color: grey;
+        }
+        
+        .payment {
+            width: 90%;
+        }
+        
+        .payment>img {
+            width: 100%;
+            margin: 0 3%;
+        }
+        
+        .showUsr {
+            overflow: hidden;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div id="logo" onclick="location.href='home.html'">
+            <img src="https://css.banggood.in/web/src/img/header-new-logo@2x.png?v=ef2889d" alt="banggood logo" title="banggood" />
+        </div>
+        <div class="search">
+            <input type="text" placeholder="search products..." />
+            <div><i class="fas fa-search fa-lg"></i></div>
+        </div>
+        <div>
+            <div class="ship">
+                <span>Ship to</span>
+                <p class="hvr">
+                    English(India)/INR <span><i class="fas fa-sort-down"></i></span>
+                </p>
+            </div>
+            <div class="user" onclick="location.href='login.html'">
+                <span class="hvr"><i class="far fa-user fa-2x"></i></span>
+                <div>
+                    <span>Hello</span>
+                    <p class="hvr" onclick="location.href='login.html'"><strong class="showUsr">Sign in</strong></p>
+                </div>
+            </div>
+            <div class="cart hvr" onclick="location.href='cart.html'">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+            </div>
+        </div>
+    </div>
+    <div id="mainboxer">
+        <div id="lefterbox">
+
+            <h4>Related Categories</h4>
+            <p>
+                < Women 's Clothing </p>
+        <div style="margin-left: 20px; ">
+        <p style="margin-left: -7px ;">Tops</p>
+        <p>Blouses & Shirts</p>
+        <p>Tank Tops</p>
+        <p>Hoodies & Sweatshirts</p>
+        <p>Sweaters</p>
+         </div>
+         <div>
+             <div id="dhan"><h4>Brands</h4>
+                <p id="minus">-</p></div>
+             <img id="zen" src="lefterbox1.jpg" alt="">
+         </div>  
+         <div>
+            <div id="dhan"><h4>Material</h4>
+                <p id="minus">-</p></div>
+             <div id="checkbox"><input  type="checkbox"> Polyester(1086)</div>
+             <div id="checkbox"><input  type="checkbox"> Cotton(655)</div>
+             <div id="checkbox"><input  type="checkbox"> Elastane(195)</div>
+             <div id="checkbox"><input  type="checkbox"> Rayon(68)</div>
+             <div id="checkbox"><input  type="checkbox"> Cotton Blends(30)</div>
+              <p id="see">SEE MORE</p>
+            </div> 
+            <div>
+                <div id="dhan"><h4>Season</h4>
+                    <p id="minus">-</p></div>
+                <div id="checkbox"><input  type="checkbox"> autumn(1224)</div>
+             <div id="checkbox"><input  type="checkbox"> Spring(1209)</div>
+             <div id="checkbox"><input  type="checkbox"> Summer(658)</div>
+             <div id="checkbox"><input  type="checkbox"> Winter(508)</div>
+             
+            </div> 
+            <div>
+                <div id="dhan"><h4>Style</h4>
+                    <p id="minus">-</p></div>
+                <div id="checkbox"><input  type="checkbox"> Casual(1462)</div>
+             <div id="checkbox"><input  type="checkbox"> Stylish(379)</div>
+             <div id="checkbox"><input  type="checkbox"> Work(234)</div>
+             <div id="checkbox"><input  type="checkbox"> Vingate(184)</div>
+             <div id="checkbox"><input  type="checkbox"> Simple(183)</div>
+             <p id="see">SEE MORE</p>
+            </div>  
+            <div>
+                <div id="dhan"><h4>Size</h4>
+                    <p id="minus">-</p></div>
+                <div id="checkbox"><input  type="checkbox"> L(1462)</div>
+             <div id="checkbox"><input  type="checkbox"> XL(379)</div>
+             <div id="checkbox"><input  type="checkbox"> M(234)</div>
+             <div id="checkbox"><input  type="checkbox"> 2XL(184)</div>
+             <div id="checkbox"><input  type="checkbox"> S(183)</div>
+             <p id="see">SEE MORE</p>
+            </div>  
+            <div>
+                <div id="dhan"><h4>Color</h4>
+                    <p id="minus">-</p></div>
+                <div id="checkbox"><input  type="checkbox"> Black(1462)</div>
+             <div id="checkbox"><input  type="checkbox"> White(379)</div>
+             <div id="checkbox"><input  type="checkbox"> Blue(234)</div>
+             <div id="checkbox"><input  type="checkbox"> Green(184)</div>
+             <div id="checkbox"><input  type="checkbox"> Grey(183)</div>
+             <p id="see">SEE MORE</p>
+            </div> 
+            <div id="dhan"> 
+                <p>Neckline</p> 
+                <p id="minus">+</p>
+            </div>  
+            <div id="dhan"> 
+                <p>Pattern Type</p> 
+                <p id="minus">+</p>
+            </div>  
+            <div id="dhan"> 
+                <p>Sleeve</p> 
+                <p id="minus">+</p>
+            </div>  
+            <div id="dhan"> 
+                <p>Thickness</p> 
+                <p id="minus">+</p>
+            </div>  
+            <div id="dhan">  
+                <p>Fit Type</p> 
+                <p id="minus">+</p>
+            </div> 
+            <div id="dhan">
+                <p>Decoration</p> 
+                <p id="minus">+</p>
+            </div> 
+            <div id="dhan">
+                <p>Scene</p> 
+                <p id="minus">+</p>
+            </div>
+            <div id="dhan">
+                <p>Clouser Type</p> 
+                <p id="minus">+</p>
+            </div>
+            <div id="dhan">
+                <p>Length</p> 
+                <p id="minus">+</p>
+            </div>
+            <div id="dhan">
+                <p>Elasticity</p> 
+                <p id="minus">+</p>
+            </div>
+    </div>
+    <div id="righterbox">
+    <div id="container2">
+        <div class="bars">
+            <div>Home</div>
+            <div>></div>
+            <div>Women's Clothing</div>
+                    <div>></div>
+                    <div>Tops</div>
+                    <div>></div>
+                    <div style="color:black" ;>T-Shirts</div>
+        </div>
+        <div class="price_bar">
+            <div class="price_name">Price</div>
+            <div><input class="min" type="text" placeholder="min"></div>
+            <div><input class="max" type="text" placeholder="max"></div>
+            <div class="vertical_bars">
+                <div>
+                    <div style="background-color:rgb(235,235,240);height:20%;margin-top: 30px;"></div>
+                </div>
+                <div>
+                    <div style="background-color: rgb(235,235,240);height:63%;margin-top: 15px;"></div>
+                </div>
+                <div>
+                    <div style="background-color: rgb(235,235,240);height:84%;margin-top: 8px;"></div>
+                </div>
+                <div>
+                    <div style="background-color: rgb(235,235,240);height:35%;margin-top: 25px;"></div>
+                </div>
+                <div></div>
+            </div>
+            <div><select class="ship_from">
+                <option  >Ship From</option>
+                <!-- <option value="">All Regions</option> -->
+            </select></div>
+        </div>
+        <div class="sort">
+            <div class="sort_heading">Sort by</div>
+            <div class="sort_box">
+                <div>Popular |</div>
+                <div>Newest |</div>
+                <div>Most Reviews |</div>
+                <div>
+                    <select onchange="shortedPrice()" id="price_tag">
+                        <option value="Common">Price</option>
+                        <option value="Low">Low</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+            </div>
+            <div class="checkbox_content"><input class="checkbox" type="checkbox">Upgraded deals</div>
+        </div>
+    </div>
+    <div id="container"></div>
+    </div>
+    </div>
+    <div id="footer">
+        <div class="f-1">
+            <div>
+                <h4>Get to know Us</h4>
+                <p>About Banggood.in</p>
+                <p>Guarantee & Return Policy</p>
+                <p>Contact Us</p>
+                <p>Help Center</p>
+                <p>Site Map</p>
+                <p>Intellectual Property Claims</p>
+            </div>
+
+            <div>
+                <h4>Subscribe</h4>
+                <p>
+                    By subscribing you agree to receive email from us. Please read our Privacy Policy
+                </p>
+                <input type="text" placeholder="Email Address" />
+            </div>
+        </div>
+        <div class="f-2">
+            <div>
+                <h4>Payment & shipping</h4>
+                <p>Payment Methods</p>
+                <p>BGpay Instruction</p>
+                <p>Shipping Guide</p>
+                <p>Locations We ship to</p>
+                <p>Estimated Delivery Time</p>
+            </div>
+            <div>
+                <h4>Partnership Programs</h4>
+                <p>Drop shipping</p>
+                <p>Review CLub</p>
+                <p>Affiliate Program</p>
+                <p>Wholesale Program</p>
+                <p>Fashion Blogger Program</p>
+            </div>
+        </div>
+        <div class="f-3">
+            <div>
+                <h4>Download App</h4>
+                <div>
+                    <span><i class="fab fa-apple"></i></span>
+                    <span><i class="fab fa-android"></i></span>
+                    <p>
+                        <span><i class="fas fa-qrcode"></i></span> QR Code
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h4>Follow Us</h4>
+                <p>Facebook <span>VK</span></p>
+                <p>Instagram <span>Blog</span></p>
+                <p>Youtube <span>Reddit</span></p>
+                <p>Twitter <span>Telegram</span></p>
+                <p>Pinterest <span>Tiktok</span></p>
+            </div>
+
+            <div>
+                <span>&copy; 2006-2022 BANGGGOD</span>
+                <p>TERMS PRIVACY SPECIALIZED AFFAIRS</p>
+            </div>
+        </div>
+    </div>
+    <div class="payment">
+        <img src="paytm.png" alt="" />
+    </div>
+
+</body>
+
+</html>
+<script src="womensData.js"></script>
+</script>
+<script>
+    var data = JSON.parse(localStorage.getItem("womens_data"))
+    displaydata(data);
+
+    ///////creating function to display to show items.
+    //////////
+    function displaydata(data) {
+        document.querySelector("#container").textContent = "";
+
+        data.map(function(item) {
+
+
+            var image = document.createElement("img")
+            image.setAttribute("src", item.image)
+            image.addEventListener("click", function() {
+                addToCart(item);
+            });
+            var title = document.createElement("h3")
+            title.textContent = item.name
+            title.setAttribute("class", "title")
+            title.addEventListener("click", function() {
+                addToCart(item);
+            });
+            var price = document.createElement("h4")
+            price.textContent = `₹${Number(item.price).toLocaleString('en-IN')}`
+            price.setAttribute("class", "price")
+            var discount = document.createElement("h4")
+            discount.textContent = item.discount
+            discount.setAttribute("class", "discount")
+            var offer = document.createElement("h4")
+            offer.textContent = item.off
+            offer.setAttribute("class", "offer")
+            var review = document.createElement("h5")
+            review.textContent = item.review
+            review.setAttribute("class", "review")
+            var deals = document.createElement("h3")
+            deals.textContent = item.deals
+            deals.setAttribute("class", "deals")
+            var parent = document.createElement("div")
+            parent.setAttribute("id", "parent")
+            var dis_offer = document.createElement("div")
+            dis_offer.setAttribute("class", "dis_offer")
+            var content = document.createElement("div")
+            content.setAttribute("class", "content")
+            var img_box = document.createElement("div")
+            img_box.setAttribute("class", "img_box")
+            img_box.append(image)
+            dis_offer.append(discount, offer)
+            content.append(price, dis_offer, title, review, deals)
+            parent.append(img_box, content)
+            document.querySelector("#container").append(parent)
+        })
+
+
+    }
+
+    // var womensArray=JSON.parse(localStorage.getItem("WomensItems")) ||[];
+    var womensArray = [];
+
+    function addToCart(item) {
+        womensArray.push(item);
+        // console.log(womensArray)
+        localStorage.setItem("womensCartItem", JSON.stringify(womensArray));
+
+        window.location.href = "womenCheckout.html";
+    }
+
+    /////creating a function to sort the given data
+    ///////////
+    function shortedPrice() {
+        var valuePrice = document.querySelector("#price_tag").value;
+        if (valuePrice == "High") {
+            var sortedList = data.sort((a, b) => {
+                return b.price - a.price;
+            })
+            displaydata(sortedList);
+        } else if (valuePrice == "Low") {
+            var sortedList = data.sort((a, b) => {
+                return a.price - b.price;
+            })
+            displaydata(sortedList);
+        } else {
+            window.location.reload();
+        }
+    }
+
+    // //////////////ADDING SCRIPT TO SHOW THE USERNAME IN THE NAVIGATION BAR
+    var USERNAME = JSON.parse(localStorage.getItem("USERNAME"));
+    console.log(USERNAME);
+    if (USERNAME !== null) {
+        document.querySelector(".showUsr").textContent = USERNAME;
+    }
+
+    // window.onbeforeunload = function() {
+    //     localStorage.removeItem("USERNAME");
+    //     return null;
+    // };
+</script>

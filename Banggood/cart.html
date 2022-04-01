@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart- www.banggood.com</title>
+    <link rel="shortcut icon" href="https://www.banggood.in/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="items-pr-re">
+            <img src="icons8-user-24.png"> <a href="login.html" id="hellSign">Hello, <span class="showUsr">Sign In</span>  </a><a href="login.html" id="Register"> Register</a>
+        </div>
+        <select name="" id="select">
+            <option value="">Help</option>
+            <option value="">Contact Us</option>
+            <option value="">Help Centre</option>
+            Help
+        </select>
+        <div class="shippingToIndia">
+            <div>Ship to </div>
+            <img src="icons8-india-48.png">
+            <div>/English(India)/INR</div>
+        </div>
+
+    </div>
+    <div class="brandlogo-cotainer">
+
+        <div class="brandlogo" onclick="location.href = 'home.html'">Ban<span style="color: tomato;">ցց</span>ood</div>
+        <div class="img-secure"><img src="icons8-security-shield-green-24.png">
+            <h5>Secure CheckOut</h5>
+        </div>
+        <div class="progress-bar-head">
+            <progress value="15" max="100" id="progressBar"></progress>
+            <div class="progress-bar-items">
+                <div>Shopping Cart</div>
+                <div>Place Order</div>
+                <div>Pay</div>
+                <div>Completed</div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="cart-container-empty">
+        <div class="cart-image"><img src="icons8-cart-64.png" alt=""></div>
+        <h1 class="your-cart-empty">Your Shooping Cart Is Empty</h1>
+        <div class="signin-to-view"><a href="..\LogIn/login.html">Sign In </a> to view your Cart or</div>
+        <div class="go-shopping" onclick="location.href='home.html'">Go Shopping</div>
+    </div>
+    <div class="display-cartItems">
+
+    </div>
+    <!-- 
+    <div class="footer">
+        <img src="sprite3.png" alt="">
+    </div>
+ -->
+
+</body>
+
+</html>
+<!-- <script src="cartData.js"></script> -->
+<script src="cart.js"></script>

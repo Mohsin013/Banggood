@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please Confirm Your Order- www.banggood.com</title>
+    <link rel="shortcut icon" href="https://www.banggood.in/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="address.css">
+</head>
+
+<body>
+
+
+    <div class="navigation">
+        <div class="items-pr-re">
+            <img src="icons8-user-24.png"> <a href="..\LogIn/login.html" id="hellSign">Hello,User </a><a href="..\LogIn/login.html" id="Register"> RegisterED</a>
+        </div>
+        <select name="" id="select">
+            <option value="">Help</option>
+            <option value="">Contact Us</option>
+            <option value="">Help Centre</option>
+            Help
+        </select>
+        <div class="shippingToIndia">
+            <div>Ship to </div>
+            <img src="icons8-india-48.png">
+            <div>/English(India)/INR</div>
+        </div>
+
+    </div>
+    <div class="brandlogo-cotainer" onclick="window.location.href='home.html'">
+
+        <div class="brandlogo">Ban<span style="color: tomato;">ցց</span>ood</div>
+        <div class="img-secure"><img src="icons8-security-shield-green-24.png">
+            <h5>Secure CheckOut</h5>
+        </div>
+        <div class="progress-bar-head">
+            <progress value="45" max="100" id="progressBar"></progress>
+            <div class="progress-bar-items">
+                <div>Shopping Cart</div>
+                <div>Place Order</div>
+                <div>Pay</div>
+                <div>Completed</div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="address-container">
+
+        <div class="form-filling">
+            <h2 class="shippingADDR">Shipping Address</h2>
+            <div class="heading-input">
+                <h4 class="name">Name:</h4>
+                <h4 class="name">Telephone</h4>
+            </div>
+
+            <div class="input-name"> <input type="text" placeholder="First name" class="first_name">
+                <input type="text" placeholder="Last name" class="last_name">
+                <input type="number" placeholder="Your Telephone" class="telephone">
+            </div>
+            <div class="heading-input">
+                <h4 class="name">Address Line1:</h4>
+                <h4 class="name">Address Line2:</h4>
+            </div>
+
+            <div class="ADDR1">
+                <input type="text" placeholder="Street and number,Company name, C/O" class="adrr1">
+                <input type="text" placeholder="Apartment/Suite/unit/Building/floor evc." class="adrr2">
+
+            </div>
+
+            <div class="heading-input">
+                <h4 class="name">Country/Region:</h4>
+                <h4 class="name">State/Provinve/Region:</h4>
+            </div>
+
+            <div class="ADDR1">
+                <input type="text" placeholder="India" class="country">
+                <input type="text" placeholder="Please Enter a State.Province/Region" class="state">
+
+            </div>
+
+            <div class="heading-input">
+                <h4 class="name">City</h4>
+                <h4 class="name">ZIP/Post Code</h4>
+            </div>
+
+            <div class="ADDR1">
+                <input type="text" placeholder="City" class="city">
+                <input type="text" placeholder="Your Post Code" class="postcode">
+
+            </div>
+
+            <div class='default-set'>
+                <input type="checkbox" style="margin-top: 3px;">
+                <h3 class="SelectAll">Select as default shipping address</h3>
+
+                <div class="save-cancel">
+                    <div class="cancel">Cancel</div>
+                    <div class="save">Save</div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="coupon-code">
+            <h2 class="discount">Discounts</h2>
+            <h4 class="coupons">Coupons(0 available)</h4>
+            <div class="apply">
+                <input type="text" placeholder="Enter Coupon code">
+                <h4>Apply</h4>
+
+            </div>
+            <h5 class="or">-----or-----</h5>
+            <h3 class="points">Points (0 available)
+
+            </h3>
+            <hr class="hr1">
+            <h3 class="points">Allowance (0 available)</h3>
+            <hr class="hr1">
+
+            <h2 class="discount">Total</h2>
+
+            <div class="orderPayment">
+                <h3>Order Total</h3>
+                <h3 class="orderPay-Price"></h3>
+            </div>
+
+            <div class="orderPayment">
+                <h3>Total Payment</h3>
+                <h3 class="orderPay-Price-afterDis"></h3>
+            </div>
+
+            <h2 class="place-order" onclick="payOrder()">Place Order</h2>
+
+
+        </div>
+
+    </div>
+
+    <div class='payment-method'>
+        <img src="sprite3.png" alt="">
+        <h3>TERMS</h3>
+        <h3>PRIVACY</h3>
+        <!-- <h3>Specailised Offers</h3> -->
+        <h3>SPECIALIZED AFFAIRS</h3>
+        <h3>© 2006-2022 BANGGOOD</h3>
+    </div>
+</body>
+
+</html>
+<script src="address.js"></script>

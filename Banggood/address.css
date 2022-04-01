@@ -1,0 +1,414 @@
+.navigation {
+    background-color: darkslategray;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: max-content;
+}
+
+* {
+    margin: 0px;
+}
+
+.navigation>div {
+    color: silver;
+    padding: 4px;
+    font-size: 13px;
+}
+
+.navigation>div>a {
+    align-self: center;
+    color: silver;
+    text-decoration: none;
+    margin: 3px;
+}
+
+#Register {
+    color: tomato;
+}
+
+.items-pr-re {
+    display: flex;
+    border-right: 0.5px solid darkgray;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+
+.items-pr-re>i {
+    color: silver;
+}
+
+.items-pr-re~a:hover {
+    color: tomato;
+    text-decoration: underline;
+}
+
+#hellSign:hover {
+    color: tomato;
+}
+
+#select {
+    background-color: darkslategray;
+    color: silver;
+    border-right: 1px solid darkgray;
+}
+
+#select:hover {
+    color: tomato;
+}
+
+.shippingToIndia {
+    display: inline-flex;
+    grid-template-rows: 1fr;
+    color: silver;
+    align-items: center;
+    align-content: center;
+    width: max-content;
+    margin-right: 40px;
+}
+
+.shippingToIndia:hover {
+    color: tomato;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.brandlogo {
+    color: rgb(29, 25, 31);
+    align-self: center;
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    width: max-content;
+    padding-right: 10px;
+    border-right: 1px solid #656d78;
+    margin: 20px 30px 20px 50px;
+}
+
+.brandlogo-cotainer {
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: max-content;
+}
+
+.img-secure {
+    display: inline-flex;
+    align-self: center;
+    color: green;
+    font-size: 15px;
+}
+
+.img-secure>h5 {
+    align-self: center;
+    margin-left: 8px;
+}
+
+.cart-container-empty {
+    display: flex;
+    margin: 50px auto;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+    background-color: whitesmoke;
+}
+
+.cart-image {
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    background-color: white;
+    border-radius: 80px;
+    justify-content: center;
+}
+
+.cart-image>img {
+    align-self: center;
+}
+
+.your-cart-empty {
+    color: darkslategray;
+    margin: 20px auto;
+}
+
+.signin-to-view {
+    /* margin-top: 20px; */
+    color: #656d78;
+    font-size: 17px;
+    margin: 0px auto 8px auto;
+}
+
+.signin-to-view>a {
+    color: #656d78;
+    text-decoration: none;
+    color: tomato;
+}
+
+.signin-to-view>a:hover {
+    text-decoration: underline;
+}
+
+.go-shopping {
+    background-color: tomato;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px auto;
+}
+
+#progressBar {
+    width: 500px;
+    align-self: center;
+    margin-left: 350px;
+}
+
+.progress-bar-items {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: 350px;
+    color: #656d78;
+}
+
+.progress-bar-head {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.address-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.form-filling {
+    background-color: white;
+    width: 65%;
+    height: 465px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.coupon-code {
+    background-color: white;
+    margin-left: 20px;
+    width: 30%;
+    height: 45%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.shippingADDR {
+    color: rgb(51, 51, 51);
+    margin-left: 20px;
+    margin-top: 20px;
+    /* padding: 10px; */
+}
+
+.name {
+    color: #656d78;
+    margin-left: 20px;
+    margin-top: 15px;
+    /* padding-left: 10px; */
+}
+
+.input-name {
+    margin-top: 10px;
+    margin-left: 21px;
+}
+
+.input-name>input {
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.telephone {
+    width: 323px;
+    margin-left: 25px;
+}
+
+.ADDR1 {
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.ADDR1 input {
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    width: 350px;
+}
+
+.heading-input {
+    display: flex;
+    justify-content: space-around;
+}
+
+.default-set {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.SelectAll {
+    margin-left: 10px;
+    color: #656d78;
+    font-weight: lighter;
+}
+
+.save-cancel {
+    display: flex;
+    margin-left: 330px;
+}
+
+.cancel {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-top: 0px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #656d78;
+    text-align: center;
+    width: 80px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.save {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-top: 0px;
+    margin-left: 20px;
+    align-self: center;
+    font-weight: bold;
+    background-color: rgb(255, 110, 38);
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+    color: white;
+}
+
+.discount {
+    color: rgb(51, 51, 51);
+    margin: 20px auto auto 20px;
+}
+
+.coupons {
+    margin: 10px auto auto 20px;
+    color: #656d78;
+    font-weight: lighter;
+}
+
+.apply {
+    display: flex;
+}
+
+.apply input {
+    margin: 10px auto auto 20px;
+    padding: 8px;
+    width: 220px;
+}
+
+
+/* .apply:hover {
+    background-color: #656d78;
+} */
+
+.apply h4 {
+    padding: 8px;
+    margin-right: 20px;
+    border: 1px solid #656d78;
+    text-align: center;
+    align-self: center;
+    /* color: white; */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.apply h4:hover {
+    background-color: whitesmoke;
+}
+
+.or {
+    margin: 10px auto auto 20px;
+    color: #656d78;
+}
+
+.points {
+    margin: 10px auto auto 20px;
+    color: #656d78;
+}
+
+.hr1 {
+    opacity: 0.5;
+    width: 80%;
+    margin-left: 33px;
+    margin-top: 15px;
+}
+
+.orderPayment {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px auto 20px;
+}
+
+.orderPay-Price-afterDis {
+    font-size: 30px;
+    color: rgb(51, 51, 51);
+}
+
+.place-order {
+    width: 80%;
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 110, 38);
+    padding: 8px;
+    margin-left: 30px;
+    font: bold;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.payment-method {
+    display: flex;
+    margin: 10px auto 5px 30px;
+    background-color: white;
+    border-radius: 5px;
+    width: 97%;
+    height: 85px;
+}
+
+.payment-method>img {
+    margin-top: 35px;
+    height: 35px;
+    width: 250px;
+}
+
+.payment-method>h3 {
+    margin-top: 43px;
+    color: #656d78;
+    margin-left: 15px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.payment-method>h3:hover {
+    text-decoration: underline;
+}

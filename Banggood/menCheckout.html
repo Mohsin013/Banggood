@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/5194c7794a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="https://www.banggood.in/favicon.ico" type="image/x-icon" />
+    <title>Banggood</title>
+    <link rel="stylesheet" href="home.css" />
+    <style>
+        #bigbox {
+            display: flex;
+            width: 30%;
+            margin-left: 100px;
+            /* margin:auto; */
+        }
+        
+        #headline {
+            margin-left: 100px;
+            padding: 10px;
+            color: grey;
+            font-size: 70%;
+        }
+        
+        #image:hover {
+            cursor: pointer;
+            -webkit-transform: scale(.5);
+            transform: scale(.5);
+        }
+        
+        #image {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            width: 80%;
+            /* border:1px solid green; */
+            /* height: 100%; */
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        #div3 {
+            display: flex;
+            margin-right: 10px;
+            /* border:1px solid red; */
+        }
+        
+        .discount {
+            text-decoration: line-through;
+            /* border:1px solid red; */
+            margin-left: 10px;
+            color: grey;
+            font-size: smaller;
+        }
+        
+        .offer {
+            font-size: smaller;
+            /* border:1px solid red; */
+            margin-left: 10px;
+            color: orangered;
+            font-size: 60%;
+        }
+        
+        .btn1,
+        .btn2:hover {
+            cursor: pointer;
+        }
+        
+        .btn1,
+        .btn2 {
+            color: white;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 25px;
+            padding-right: 25px;
+            background-color: red;
+            margin: 5px;
+            border: 0px;
+        }
+        
+        .btn2 {
+            background-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div id="logo" onclick="location.href='home.html'">
+            <img src="https://css.banggood.in/web/src/img/header-new-logo@2x.png?v=ef2889d" alt="banggood logo" title="banggood" />
+        </div>
+        <div class="search">
+            <input type="text" placeholder="search products..." />
+            <div><i class="fas fa-search fa-lg"></i></div>
+        </div>
+        <div>
+            <div class="ship">
+                <span>Ship to</span>
+                <p class="hvr">
+                    English(India)/INR <span><i class="fas fa-sort-down"></i></span>
+                </p>
+            </div>
+            <div class="user">
+                <span class="hvr" onclick="location.href='login.html'"><i class="far fa-user fa-2x" ></i></span>
+                <div>
+                    <span>Hello</span>
+                    <p class="hvr" onclick="location.href='login.html'"><strong>Sign in</strong></p>
+                </div>
+            </div>
+            <div class="cart hvr">
+                <i class="fas fa-shopping-cart fa-2x" onclick="location.href='cart.html'"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="headline">Home>Women's Clothing>Tops>T-Shirts</div>
+    <div id="bigbox"></div>
+    <img src="mencheckouter.png" alt="">
+
+    <!-- /////adding footer -->
+
+    <div id="footer">
+        <div class="f-1">
+            <div>
+                <h4>Get to know Us</h4>
+                <p>About Banggood.in</p>
+                <p>Guarantee & Return Policy</p>
+                <p>Contact Us</p>
+                <p>Help Center</p>
+                <p>Site Map</p>
+                <p>Intellectual Property Claims</p>
+            </div>
+
+            <div>
+                <h4>Subscribe</h4>
+                <p>
+                    By subscribing you agree to receive email from us. Please read our Privacy Policy
+                </p>
+                <input type="text" placeholder="Email Address" />
+            </div>
+        </div>
+        <div class="f-2">
+            <div>
+                <h4>Payment & shipping</h4>
+                <p>Payment Methods</p>
+                <p>BGpay Instruction</p>
+                <p>Shipping Guide</p>
+                <p>Locations We ship to</p>
+                <p>Estimated Delivery Time</p>
+            </div>
+            <div>
+                <h4>Partnership Programs</h4>
+                <p>Drop shipping</p>
+                <p>Review CLub</p>
+                <p>Affiliate Program</p>
+                <p>Wholesale Program</p>
+                <p>Fashion Blogger Program</p>
+            </div>
+        </div>
+        <div class="f-3">
+            <div>
+                <h4>Download App</h4>
+                <div>
+                    <span><i class="fab fa-apple"></i></span>
+                    <span><i class="fab fa-android"></i></span>
+                    <p>
+                        <span><i class="fas fa-qrcode"></i></span> QR Code
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h4>Follow Us</h4>
+                <p>Facebook <span>VK</span></p>
+                <p>Instagram <span>Blog</span></p>
+                <p>Youtube <span>Reddit</span></p>
+                <p>Twitter <span>Telegram</span></p>
+                <p>Pinterest <span>Tiktok</span></p>
+            </div>
+
+            <div>
+                <span>&copy; 2006-2022 BANGGGOD</span>
+                <p>TERMS PRIVACY SPECIALIZED AFFAIRS</p>
+            </div>
+        </div>
+    </div>
+    <div class="payment">
+        <img src="paytm.png" alt="" />
+    </div>
+</body>
+
+</html>
+<script>
+    var mensCheckout = JSON.parse(localStorage.getItem("mensCartItem"));
+
+    var div1 = document.createElement("div");
+    div1.setAttribute("id", "div1")
+
+    var image = document.createElement("img")
+    image.setAttribute("src", mensCheckout[0].image)
+    image.setAttribute("id", "image")
+
+    var image1 = document.createElement("img")
+    image1.setAttribute("src", "men1.png")
+    div1.append(image, image1)
+
+    var div2 = document.createElement("div");
+    div2.setAttribute("id", "div2")
+
+
+    var title = document.createElement("h3")
+    title.textContent = mensCheckout[0].name
+    title.setAttribute("id", "title")
+    var image2 = document.createElement("img")
+    image2.setAttribute("src", "men2.png")
+    var div3 = document.createElement("div");
+    div3.setAttribute("id", "div3")
+    var price = document.createElement("h4")
+    price.textContent = mensCheckout[0].price
+    price.setAttribute("class", "price")
+
+    var discount = document.createElement("h4")
+    discount.textContent = mensCheckout[0].discount
+    discount.setAttribute("class", "discount")
+
+
+    var offer = document.createElement("h4")
+    offer.textContent = mensCheckout[0].off
+    offer.setAttribute("class", "offer")
+    div3.append(price, discount, offer)
+
+
+
+
+    var div4 = document.createElement("div");
+    div4.setAttribute("id", "div4")
+
+
+    var image3 = document.createElement("img")
+    image3.setAttribute("src", "men3.png")
+    var image4 = document.createElement("img")
+    image4.setAttribute("src", "men4.png")
+
+    div4.append(image3, image4)
+
+    var div5 = document.createElement("div");
+    div5.setAttribute("id", "div5")
+    var btn1 = document.createElement("button");
+    btn1.setAttribute("class", "btn1")
+    btn1.textContent = "Buy Now";
+    btn1.addEventListener("click", function() {
+        buyNow(mensCheckout);
+
+
+    });
+
+
+    function buyNow(mensCheckout) {
+        //  WomensCheckout.push(item);
+        // console.log(womensArray)
+        localStorage.setItem("WomensCheckoutItems", JSON.stringify(mensCheckout));
+
+        var sing = localStorage.getItem("flag");
+        if (sing == "true") {
+            window.location.href = "address.html";
+        } else {
+            // window.history.go(-2);
+            // var previousSite = localStorage.setItem("pre", )
+            location.href = "login.html";
+        }
+    }
+
+    var btn2 = document.createElement("button");
+    btn2.setAttribute("class", "btn2")
+    btn2.textContent = "Add to Cart";
+    btn2.addEventListener("click", function() {
+        addToCart(mensCheckout);
+
+
+    });
+
+    var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+
+    function addToCart(mensCheckout) {
+        // console.log(mensCheckout[0]);
+        cartData.push(mensCheckout[0]);
+        // console.log(cartData);
+        localStorage.setItem("cartData", JSON.stringify(cartData));
+
+
+        alert("succefully added in cart");
+        // window.location.href = "cart.html";
+    }
+
+    div5.append(btn1, btn2);
+    var image5 = document.createElement("img")
+    image5.setAttribute("src", "men5.png")
+
+    div2.append(title, image2, div3, div4, div5, image5)
+
+    var div6 = document.createElement("div");
+    div6.setAttribute("id", "div6")
+    var image6 = document.createElement("img")
+    image6.setAttribute("src", "men6.png")
+    div6.append(image6)
+    document.querySelector("#bigbox").append(div1, div2, div6)
+</script>
