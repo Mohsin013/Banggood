@@ -35,7 +35,6 @@ LIVE DEMO:https://brilliant-maamoul-240258.netlify.app/
 
 ![Banggood](./Images/Checkout.png)
 
-![Banggood](./Images/Sign IN.png)
 
 
 
