@@ -27,14 +27,16 @@ LIVE DEMO:https://brilliant-maamoul-240258.netlify.app/
 
 ## Some of the screenshots are below:-
 
-![RodanFields](./Images/landing-page.png)
+![Banggood](./Images/home.png)
 
-![RodanFields](./Images/bag.png)
+![Banggood](./Images/Clothing.png)
 
-![RodanFields](./Images/bestsellers.png)
+![Banggood](./Images/card.png)
 
-![RodanFields](./Images/login.png)
+![Banggood](./Images/Checkout.png)
 
-![RodanFields](./Images/shopoffers.png)
+![Banggood](./Images/Sign IN.png)
+
+
 
 
