@@ -24,3 +24,17 @@ An Individual project executed in 5 days.
 https://drive.google.com/file/d/1gZwqaJCXDbgERsO8SI_dkV4SC2PdeCNZ/view?usp=sharing
 
 LIVE DEMO:https://brilliant-maamoul-240258.netlify.app/
+
+## Some of the screenshots are below:-
+
+![RodanFields](./Images/landing-page.png)
+
+![RodanFields](./Images/bag.png)
+
+![RodanFields](./Images/bestsellers.png)
+
+![RodanFields](./Images/login.png)
+
+![RodanFields](./Images/shopoffers.png)
+
+
